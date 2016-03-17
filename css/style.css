@@ -1,42 +1,222 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Orbitron:400,900);
-@import url(https://fonts.googleapis.com/css?family=Oregano:400,400italic);
+/* /* Typography */
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
+@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+@import url(https://fonts.googleapis.com/css?family=Nosifer);
 
-
-heading {
-  font-size: 60px;
+/* Global */
+body{
+  background: url("https://raw.githubusercontent.com/ehuesca5/bio-resume/master/dark_exa.png") ;
+ }
+h2 {
   color: red;
-  font-family: 'Orbitron', 'sans-serif';
-  
+  font-family: 'Nosifer', cursive;
+  font-size: 100px;
+  position: relative;
+  bottom: 130px;
+  left: 300px;
+  animation: slide1 2s ;
+  transition-timing-function: linear;
+}
+
+@keyframes slide1 {
+  0% {margin-left: -300px;);  }
+  100% {margin-left: 1px;); }
 }
 h3 {
-  background: white;
-  width: 200px;
-  margin: auto;
   color: red;
-  text-align: center;
-  font-family: 'Oregano', 'cursive';
-  font-size: 30px;
+  font-family: 'Nosifer', cursive;
+  position: relative;
+  font-size: 40px;
+  bottom: 220px;
+  left: 80px;
+  animation: slide3 2s;
+  font-size: 4em;
+
 }
-body {
-  background: 
-url("https://raw.githubusercontent.com/ehuesca5/bio-resume/master/dark_exa.png" );
+#bio {
+  font-size: 50px;
+  
+}
+@keyframes slide2 {
+  0% {margin-left: -500px;);  }
+  100% {margin-left: 30px;); }
+}
+  @keyframes slide3 {
+  0% {margin-left: -500px;);  }
+  100% {margin-left: 2px;); }
+}
+@keyframes slide4 {
+  0% {margin-left: -600px;);  }
+  100% {margin-left: 2px;); }
+}
+@keyframes slide5 {
+  0% {margin-left: -700px;);  }
+  100% {margin-left: 2px;); }
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  color: orange;
+  left: 790px;
+  font-size: 80px;
+  position: relative;
+  bottom: 250px;
+  animation: slide1 2s;
+  
+}
+h4 {
+  color: red;
+  font-family: 'Nosifer', cursive;
+  left: 230px;
+  font-size: 60px;
+  position: relative;
+  bottom: 300px;
+  animation: slide4 2s;
+  
+}
+h5 {
+  color: red;
+  font-family: 'Nosifer', cursive;
+  left: 450px;
+  font-size: 60px;
+  position: relative;
+  bottom: 410px;
+  animation: slide5 2s;
+  
 }
 div {
-  width: 80%;
-  height: 700px;
-  background: #8940B1;
-  padding: 4px;
-  margin: 0 auto;
-  box-shadow:10px 10px 5px #888888;
-}
-p{
-  font-family: 'montserrat', 'sans-serif';
+  margin-top: -300px;
   color: white;
+  position: relative;
+  top: 30px;
 }
 img {
+  
+  
+  height: 300px;  
+  width: 450px;
+  position: relative;
+  left: 720px;
+  top: 260px;
+  border-radius: 600px;
+  border: 10px solid red;
+}
+
+
+
+/* Homepage */
+p {
+  font-family: 'Crete Round', serif;
+  width: 300px;
+  position: relative;
+  bottom: 280px; 
+  animation: slide3 2s;
+  left: 180px;
+  font-size: 25px;
+}
+h {
+  stack-overflow: hidden;
+  font-size: 25px;
+  width: 20px;
+  position: relative;
+  bottom: 370px; 
+  animation: slide3 2s;
+  left: 230px;
+  font-family: 'Crete Round', serif;
+}
+h6 {
+  border: 15px solid red;
+  width: 650px;
+  height: 700px;
+  background: white;
+  position: relative;
+  margin-left: px;
+  bottom: 500px;
+}
+.image2 {
+  position: absolute; 
+  top: 1100px;
+  left: 110px;
+  border: none;
+  border-radius: none;
+  animation: beat 1s infinite;
+  background: none;
+  
+}
+@keyframes beat{
+  22% {transform: scale(.5);}
+	50% { transform: scale(1.4); }
+}
+h7 {
+  border: 15px solid red;
+  width: 650px;
   float: right;
+  height: 700px;
+  position: relative;
+  margin-left: -1000px;
+  bottom: 1254px;
+  background: white;
+  
 }
-.wrx {
-  float: left;
+.image3 {
+  position: absolute; 
+  top: 800px;
+  margin-left: 60px;
+  border: none;
+  height: 900px;
+  border-radius: none;
+  animation: wheel .3s  infinite;
+  
+  
+  
+  
+  background: none;
+  
 }
+
+@keyframes wheel {
+  0% {transform: rotate(0);  }
+  100% {transform: rotate(360deg);  }
+}
+/* Resume */
+/* NAV */
+ul {
+  color: red;
+  list-style: none;
+  margin: 10px 0;
+  padding: 10px;
+  display: block;
+  margin: 0 auto; 
+  position: relative;
+  top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  background: url(https://raw.githubusercontent.com/ehuesca5/bio-resume/master/vaio_hard_edge.png);
+  width: 800px;
+  height: 40px;
+  border-radius: 40px;
+
+ 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+li  {
+  float: left; 
+  position: relative;
+  left: 15px;
+  top: 5px;
+  font-size: 20px;
+   
+  padding: 2px;
+
+}
+
+#Nav a{
+  color: red;
+  text-decoration: none;
+  padding: 10px;
+}
+li:hover {
+  background: grey;
+  opacity: .7;
+  
+} 
